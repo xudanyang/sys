@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>管理系统</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+  <div class="forms">
+    <!-- <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">搜索</span>
+      </div>
+    </div> -->
+    <form>
+      <div class="form-group form-title">
+        增加业务
+        <div class="title-appendix" title="关闭">&times;</div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">业务名称</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="f-s-1" class="col-sm-4 col-form-label">业务类型</label>
+        <div class="col-sm-8">
+          <select class="form-control" id="f-s-1">
+            <option>继电保护</option>
+            <option>安稳控制</option>
+            <option>调度电话</option>
+            <option>行政电话</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">起始站点</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">目的站点</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group text-right">
+        <button type="button" class="btn btn-success">保存</button>
+        <button type="button" class="btn btn-info">取消</button>
+      </div>
+    </form>
+
+
+    <form>
+      <div class="form-group form-title">
+        业务列表
+        <div class="title-appendix" title="关闭">&times;</div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">检索</span>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-bordered table-hover table-striped">
+        <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>站点名称</th>
+            <th>站点类型</th>
+            <th>横坐标</th>
+            <th>纵坐标</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="form-group text-right">
+        <button type="button" class="btn btn-primary">修改</button>
+        <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </form>
+
+    <form>
+      <div class="form-group form-title">
+        修改业务
+        <div class="title-appendix" title="关闭">&times;</div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">业务名称</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="f-s-1" class="col-sm-4 col-form-label">业务类型</label>
+        <div class="col-sm-8">
+          <select class="form-control" id="f-s-1">
+            <option>安稳控制</option>
+            <option>继电保护</option>
+            <option>调度电话</option>
+            <option>行政电话</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">起始站点</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">目的站点</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group text-right">
+        <button type="button" class="btn btn-success">修改</button>
+        <button type="button" class="btn btn-info">取消</button>
+      </div>
+    </form>
+
+
+    <form>
+      <div class="form-group form-title">
+        增加站点
+        <div class="title-appendix" title="关闭">&times;</div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">站点名称</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="f-s-1" class="col-sm-4 col-form-label">电压等级</label>
+        <div class="col-sm-8">
+          <select class="form-control">
+            <option>220kV</option>
+            <option>500kV</option>
+            <option>750kV</option>
+            <option>1000kV</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">横坐标</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">纵坐标</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="f-s-1" class="col-sm-4 col-form-label">站点状态</label>
+        <div class="col-sm-8">
+          <select class="form-control">
+            <option>正常</option>
+            <option>故障</option>
+            <option>检修</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group text-right">
+        <button type="button" class="btn btn-success">保存</button>
+        <button type="button" class="btn btn-info">取消</button>
+      </div>
+    </form>
+
+
+    <form>
+      <div class="form-group form-title">
+        站点列表
+        <div class="title-appendix" title="关闭">&times;</div>
+      </div>
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">检索</span>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-bordered table-hover table-striped">
+        <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>站点名称</th>
+            <th>站点类型</th>
+            <th>横坐标</th>
+            <th>纵坐标</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+            <td>xxxx</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="form-group text-right">
+        <button type="button" class="btn btn-primary">修改</button>
+        <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </form>
+
+
+    <form>
+      <div class="form-group form-title">
+        修改站点
+        <div class="title-appendix" title="关闭">&times;</div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">站点名称</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="f-s-1" class="col-sm-4 col-form-label">电压等级</label>
+        <div class="col-sm-8">
+          <select class="form-control">
+            <option>220kV</option>
+            <option>500kV</option>
+            <option>750kV</option>
+            <option>1000kV</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">横坐标</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label class="col-sm-4 col-form-label">纵坐标</label>
+        <div class="col-sm-8">
+          <input class="form-control" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="f-s-1" class="col-sm-4 col-form-label">站点状态</label>
+        <div class="col-sm-8">
+          <select class="form-control">
+            <option>正常</option>
+            <option>故障</option>
+            <option>检修</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group text-right">
+        <button type="button" class="btn btn-success">修改</button>
+        <button type="button" class="btn btn-info">取消</button>
+      </div>
+    </form>
+
+
+
+    <form>
+        <div class="form-group form-title">
+          链路列表
+          <div class="title-appendix" title="关闭">&times;</div>
+        </div>
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">检索</span>
+            </div>
+          </div>
+        </div>
+  
+        <table class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th>链路名称</th>
+              <th>端点1</th>
+              <th>端点2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>xxxx</td>
+              <td>xxxx</td>
+              <td>xxxx</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>xxxx</td>
+              <td>xxxx</td>
+              <td>xxxx</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>xxxx</td>
+              <td>xxxx</td>
+              <td>xxxx</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <div class="form-group text-right">
+          <button type="button" class="btn btn-primary">修改</button>
+          <button type="button" class="btn btn-danger">删除</button>
+        </div>
+      </form>
+    <form>
+        <div class="form-group form-title">
+          增加链路
+          <div class="title-appendix" title="关闭">&times;</div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">链路名称</label>
+          <div class="col-sm-8">
+            <input class="form-control" placeholder="">
+          </div>
+        </div>
+  
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">端点1</label>
+          <div class="col-sm-8">
+            <input class="form-control" placeholder="">
+          </div>
+        </div>
+  
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">端点2</label>
+          <div class="col-sm-8">
+            <input class="form-control" placeholder="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="f-s-1" class="col-sm-4 col-form-label">链路状态</label>
+          <div class="col-sm-8">
+            <select class="form-control">
+              <option>正常</option>
+              <option>故障</option>
+              <option>检修</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group text-right">
+          <button type="button" class="btn btn-success">保存</button>
+          <button type="button" class="btn btn-info">取消</button>
+        </div>
+      </form>
+
+      <form>
+          <div class="form-group form-title">
+            修改链路
+            <div class="title-appendix" title="关闭">&times;</div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">链路名称</label>
+            <div class="col-sm-8">
+              <input class="form-control" placeholder="">
+            </div>
+          </div>
+    
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">端点1</label>
+            <div class="col-sm-8">
+              <input class="form-control" placeholder="">
+            </div>
+          </div>
+    
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">端点2</label>
+            <div class="col-sm-8">
+              <input class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="f-s-1" class="col-sm-4 col-form-label">链路状态</label>
+            <div class="col-sm-8">
+              <select class="form-control">
+                <option>正常</option>
+                <option>故障</option>
+                <option>检修</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group text-right">
+            <button type="button" class="btn btn-success">修改</button>
+            <button type="button" class="btn btn-info">取消</button>
+          </div>
+        </form>
+  
+
+
+
+
+        <form>
+            <div class="form-group form-title">
+              路由列表
+              <div class="title-appendix" title="关闭">&times;</div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">检索</span>
+                </div>
+              </div>
+            </div>
+      
+            <table class="table table-bordered table-hover table-striped">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>路由名称</th>
+                  <th>业务名称</th>
+                  <th>路由</th>
+                  <th>类型</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                  <td>甘肃-新疆</td>
+                  <td>主用路由</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                  <td>xxxx</td>
+                </tr>
+              </tbody>
+            </table>
+      
+            <div class="form-group text-right">
+              <button type="button" class="btn btn-primary">修改</button>
+              <button type="button" class="btn btn-danger">删除</button>
+            </div>
+          </form>
+      <form>
+          <div class="form-group form-title">
+            增加路由
+            <div class="title-appendix" title="关闭">&times;</div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">路由名称</label>
+            <div class="col-sm-8">
+              <input class="form-control" placeholder="">
+            </div>
+          </div>
+    
+          <div class="form-group row">
+              <label for="f-s-1" class="col-sm-4 col-form-label">业务</label>
+              <div class="col-sm-8">
+                <select class="form-control">
+                  <option>业务1</option>
+                  <option>业务2</option>
+                </select>
+              </div>
+            </div>
+    
+          <div class="form-group row">
+            <label for="f-s-1" class="col-sm-4 col-form-label">路由类型</label>
+            <div class="col-sm-8">
+              <select class="form-control">
+                <option>主用路由</option>
+                <option>备份路由</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-4 col-form-label">路由序列</label>
+            <div class="col-sm-8">
+              <input class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="form-group text-right">
+            <button type="button" class="btn btn-success">保存</button>
+            <button type="button" class="btn btn-info">取消</button>
+          </div>
+        </form>
+  
+        <form>
+            <div class="form-group form-title">
+              修改路由
+              <div class="title-appendix" title="关闭">&times;</div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label">路由名称</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="">
+              </div>
+            </div>
+      
+            <div class="form-group row">
+                <label for="f-s-1" class="col-sm-4 col-form-label">业务</label>
+                <div class="col-sm-8">
+                  <select class="form-control">
+                    <option>业务1</option>
+                    <option>业务2</option>
+                  </select>
+                </div>
+              </div>
+      
+            <div class="form-group row">
+              <label for="f-s-1" class="col-sm-4 col-form-label">路由类型</label>
+              <div class="col-sm-8">
+                <select class="form-control">
+                  <option>主用路由</option>
+                  <option>备份路由</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label">路由序列</label>
+              <div class="col-sm-8">
+                <input class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group text-right">
+              <button type="button" class="btn btn-success">修改</button>
+              <button type="button" class="btn btn-info">取消</button>
+            </div>
+          </form>
+  </div>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
