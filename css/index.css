@@ -2,6 +2,47 @@ body {
     margin-top: 1rem;
 }
 
+.left-nav {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    border: 1px solid #eee;
+    padding: 0 15px;
+    min-width: 200px;
+    font-size: 1.1rem;
+}
+
+.left-nav .nav-title {
+    margin: 0 -15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.left-nav .nav-body > ul, 
+.left-nav .nav-body > ul > li {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+li > ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.nav-body li a {
+    text-decoration: none;
+    padding-top: 4px;
+    display: block;
+}
+
+.nav-body > ul > li > a:first-child {
+    padding-top: 15px;
+    font-weight: bold;
+    display: block;
+}
+
 .forms {
     width: 460px;
     margin: 0 auto;
