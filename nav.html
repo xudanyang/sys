@@ -41,6 +41,7 @@
   </div>
 
   <div class="tables">
+    <div class="table-container">
       <table class="table table-bordered table-hover table-striped">
         <thead>
           <tr>
@@ -79,6 +80,143 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="table-container">
+      <table class="table table-bordered table-hover table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>业务名称</th>
+            <th>路由类型</th>
+            <th>路由</th>
+            <th>时延</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+            <td rowspan="2" class="vmiddle">业务1111</td>
+            <td>主用路由</td>
+            <td>xxxx</td>
+            <td>33ms</td>
+            <td><button type="button" class="btn btn-sm btn-danger">隐藏</button></td>
+          </tr>
+          <tr>
+            <td>备用路由</td>
+            <td>北京->上海->南京->深圳</td>
+            <td>33ms</td>
+            <td><button type="button" class="btn btn-sm btn-primary">显示</button></td>
+          </tr>
+
+          <tr>
+            <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+            <td rowspan="2" class="vmiddle">业务交直流协调控制。。</td>
+            <td>主用路由</td>
+            <td>北京->上海->深圳</td>
+            <td>33ms</td>
+            <td><button type="button" class="btn btn-sm btn-primary">显示</button></td>
+          </tr>
+          <tr>
+            <td>备用路由</td>
+            <td>xxxx</td>
+            <td>33ms</td>
+            <td><button type="button" class="btn btn-sm btn-primary">显示</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="risk">
+      <h5 class="title">网络风险分析 <span class="close">&times;</span></h5>
+      <div class="table-container">
+        <table class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>业务名称</th>
+              <th>路由类型</th>
+              <th>路由</th>
+              <th>风险均衡度</th>
+              <th>电压等级均衡度</th>
+              <th>主备相似度</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+              <td rowspan="2" class="vmiddle">业务1111</td>
+              <td>主用路由</td>
+              <td>北京->上海</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>备用路由</td>
+              <td>北京->上海->南京->深圳</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+              <td rowspan="2" class="vmiddle">业务交直流协调控制。。</td>
+              <td>主用路由</td>
+              <td>北京->上海->深圳</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>备用路由</td>
+              <td>xxxx</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+              <td rowspan="2" class="vmiddle">业务交直流协调控制。。</td>
+              <td>主用路由</td>
+              <td>北京->上海->深圳</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>备用路由</td>
+              <td>xxxx</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+              <td rowspan="2" class="vmiddle">业务交直流协调控制。。</td>
+              <td>主用路由</td>
+              <td>北京->上海->深圳</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>备用路由</td>
+              <td>xxxx</td>
+              <td>0.8</td>
+              <td>1.2</td>
+              <td>0.3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
   </div>
 
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
