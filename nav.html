@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>管理系统</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+  <div class="left-nav">
+    <div class="nav-title">功能导航</div>
+    <div class="nav-body">
+      <ul>
+        <li>
+          <a href="javascript:;">资源管理</a>
+          <ul>
+            <li><a href="javascript:;">业务管理</a></li>
+            <li><a href="javascript:;">路由管理</a></li>
+            <li><a href="javascript:;">站点管理</a></li>
+            <li><a href="javascript:;">链路管理</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:;">路由规划</a>
+          <ul>
+            <li><a href="javascript:;">路由规划方案</a></li>
+            <li><a href="javascript:;">网络风险分析</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:;">网络拓扑管理</a>
+          <ul>
+            <li><a href="javascript:;">查看拓扑</a></li>
+            <li><a href="javascript:;">查看路由</a></li>
+            <li><a href="javascript:;">导入拓扑</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tables">
+      <table class="table table-bordered table-hover table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>业务名称</th>
+            <th>路由类型</th>
+            <th>路由</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+            <td rowspan="2" class="vmiddle">业务1111</td>
+            <td>主用路由</td>
+            <td>xxxx</td>
+            <td><button type="button" class="btn btn-sm btn-danger">隐藏</button></td>
+          </tr>
+          <tr>
+            <td>备用路由</td>
+            <td>北京->上海->南京->深圳</td>
+            <td><button type="button" class="btn btn-sm btn-primary">显示</button></td>
+          </tr>
+
+          <tr>
+            <td rowspan="2" class="vmiddle tcenter"><input type="checkbox"></td>
+            <td rowspan="2" class="vmiddle">业务交直流协调控制。。</td>
+            <td>主用路由</td>
+            <td>北京->上海->深圳</td>
+            <td><button type="button" class="btn btn-sm btn-primary">显示</button></td>
+          </tr>
+          <tr>
+            <td>备用路由</td>
+            <td>xxxx</td>
+            <td><button type="button" class="btn btn-sm btn-primary">显示</button></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

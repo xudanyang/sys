@@ -2,6 +2,21 @@ body {
     margin-top: 1rem;
 }
 
+.tables {
+    left: 300px;
+    width: 960px;
+    position: relative;
+    top: 460px;
+}
+
+.tables .vmiddle {
+    vertical-align: middle;
+}
+
+.table .tcenter {
+    text-align: center;
+}
+
 .left-nav {
     position: fixed;
     top: 2rem;
